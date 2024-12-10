@@ -1,0 +1,20 @@
+def faktorial(n):
+    if n==0 or n==1:
+        return 1
+    else:
+        return n*(faktorial(n-1))
+    
+a=int(input("masukan nilai yang akan dicari: "))
+cari_faktorial= faktorial(a)
+print ("nilai dari",a,"!adalah", cari_faktorial)
+
+def fibonacci(n):
+    if n<1:
+        return("Fibonacci tdk dapat  dihitung")
+    elif n==1 or n==2:
+        return 1
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)  
+a=int(input("masukan nilai yang akan dicari:")) 
+jumlah_angka=fibonacci(a)
+print(jumlah_angka)
